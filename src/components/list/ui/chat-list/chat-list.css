@@ -40,10 +40,10 @@
       border-radius: 10px;
       cursor: pointer;
 
-    }
+      &:hover {
+        background-color: rgba(29, 31, 46, .7);
+      }
 
-    .add:hover {
-      background-color: rgba(29, 31, 46, .75);
     }
   }
 
@@ -54,10 +54,10 @@
     padding: 20px;
     cursor: pointer;
     border-bottom: 1px solid #dddddd35;
-  }
 
-  .item:hover {
-    background-color: rgba(29, 31, 46, .35);
+    &:hover {
+      background-color: rgba(29, 31, 46, .3);
+    }
   }
 
   img {
@@ -81,16 +81,15 @@
       font-weight: 300;
     }
   }
-}
 
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(29, 31, 46);
+    border-radius: 12px;
+  }
 
-.chat-list::-webkit-scrollbar-thumb {
-  background-color: rgba(29, 31, 46);
-  border-radius: 12px;
-}
-
-.chat-list::-webkit-scrollbar {
-  background-color: rgba(29, 31, 31, 0.5);
-  border-radius: 12px;
-  width: 6px;
+  &::-webkit-scrollbar {
+    background-color: rgba(29, 31, 31, 0.5);
+    border-radius: 12px;
+    width: 6px;
+  }
 }
