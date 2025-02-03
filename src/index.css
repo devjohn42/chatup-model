@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  width: 90vw;
+  width: 80vw;
   height: 90vh;
   background-color: rgba(29, 31, 46, .75);
   backdrop-filter: blur(20px) saturate(180%);

@@ -5,6 +5,11 @@ import './chat.css'
 const Chat = () => {
   const [openEmoji, setOpenEmoji] = React.useState(false)
   const [message, setMessage] = React.useState('')
+  const endRef = React.useRef(null)
+
+  React.useEffect(() => {
+    endRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }, [])
 
   const handleEmoji = (e) => {
     setMessage((prev) => prev + e.emoji)
@@ -96,6 +101,7 @@ const Chat = () => {
             <span>1 min ago</span>
           </div>
         </div>
+        <div ref={endRef}></div>
       </div>
 
       <div className="bottom">
